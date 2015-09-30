@@ -1,0 +1,29 @@
+{
+  "name": "hugla-redis-session",
+  "version": "0.1.0",
+  "description": "hugla web framework's node back-end redis session module",
+  "keywords": [
+    "web",
+    "framework",
+    "hugla",
+    "redis",
+    "session"
+  ],
+  "license": "MIT",
+  "author": "noosxe <noosx.e@gmail.com> (https://noosxe.com/)",
+  "dependencies": {
+    "connect-redis": "2.5.1"
+  },
+  "devDependencies": {
+    "mocha": "2.3.3",
+    "chai": "2.1.0",
+    "sinon": "1.17.1",
+    "sinon-chai": "2.8.0",
+    "jshint": "2.8.0"
+  },
+  "scripts": {
+    "lint": "jshint index.js lib/**.js",
+    "test": "mocha --reporter spec --bail"
+  }
+
+}
