@@ -12,7 +12,8 @@
   "license": "MIT",
   "author": "noosxe <noosx.e@gmail.com> (https://noosxe.com/)",
   "dependencies": {
-    "connect-redis": "2.5.1"
+    "connect-redis": "2.5.1",
+    "express-session": "1.11.3"
   },
   "devDependencies": {
     "mocha": "2.3.3",
