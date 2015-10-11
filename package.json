@@ -10,6 +10,7 @@
     "session"
   ],
   "license": "MIT",
+  "repository": "hugla/hugla-node-redis-session",
   "author": "noosxe <noosx.e@gmail.com> (https://noosxe.com/)",
   "dependencies": {
     "connect-redis": "2.5.1",
@@ -17,14 +18,16 @@
   },
   "devDependencies": {
     "mocha": "2.3.3",
+    "mocha-lcov-reporter": "1.0.0",
     "chai": "2.1.0",
     "sinon": "1.17.1",
     "sinon-chai": "2.8.0",
-    "jshint": "2.8.0"
+    "jshint": "2.8.0",
+    "istanbul": "0.3.22"
   },
   "scripts": {
     "lint": "jshint index.js lib/**.js",
-    "test": "mocha --reporter spec --bail"
+    "test": "mocha --reporter spec --bail",
+    "test-ci": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec"
   }
-
 }
