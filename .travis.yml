@@ -3,5 +3,7 @@ node_js:
   - "4.1"
   - "4.0"
 sudo: false
+services:
+  - redis-server
 script: "npm run-script test-ci"
 after_script: "npm install coveralls@2.11.4 && cat ./coverage/lcov.info | coveralls"
